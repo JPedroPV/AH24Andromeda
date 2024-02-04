@@ -18,299 +18,299 @@ export const parts = [
     id: 11,
     type: 'Nose',
     name: 'Blunt Nose',
-    price: 0,
-    weight: 0,
-    aero: '',
+    price: 5000,
+    weight: 300,
+    aero: 'Very Low',
     turn: '',
     capacity: 0,
     thrust: 0,
     efficiency: 0,
     fuel: 0,
-    description: 'Blunt'
+    description: 'The Blunt Nose is the perfect, affordable nose for the working Andromedan. It has a rugged charm that is sure to please the budget-conscious spacefarer.'
   },
   {
     id: 12,
     type: 'Nose',
     name: 'Parabolic Nose',
-    price: 0,
-    weight: 0,
-    aero: '',
+    price: 75000,
+    weight: 350,
+    aero: 'High',
     turn: '',
     capacity: 0,
     thrust: 0,
     efficiency: 0,
     fuel: 0,
-    description: 'Parabolic'
+    description: 'The gentle curve of the Parabolic Nose is well suited to the exclusive customer. The sleek design is sure to impress.'
   }
   ,
   {
     id: 13,
     type: 'Nose',
     name: 'Ogive Nose',
-    price: 0,
-    weight: 0,
-    aero: '',
+    price: 90000,
+    weight: 450,
+    aero: 'Very High',
     turn: '',
     capacity: 0,
     thrust: 0,
     efficiency: 0,
     fuel: 0,
-    description: 'Ogive'
+    description: 'The Ogive Nose is the most common rocket nose used on our vehicles. The Ogive is a perfect mix of price and quality'
   }
   ,
   {
     id: 14,
     type: 'Nose',
     name: 'Cone Nose',
-    price: 0,
-    weight: 0,
-    aero: '',
+    price: 100000,
+    weight: 400,
+    aero: 'Very High',
     turn: '',
     capacity: 0,
     thrust: 0,
     efficiency: 0,
     fuel: 0,
-    description: 'Cone'
+    description: 'The angular beauty of the Conic design makes a sharp statement. Speed demons will love the aerodynamics offered by this striking nose cone'
   }
   ,
   {
     id: 21,
     type: 'Crew',
-    name: 'No Crew',
-    price: 0,
-    weight: 0,
+    name: 'No Crew Module',
+    price: 4000000,
+    weight: 3000,
     aero: '',
     turn: '',
     capacity: 0,
     thrust: 0,
     efficiency: 0,
     fuel: 0,
-    description: 'No Crew'
+    description: 'The No Crew Module offers an affordable and effective package for those who wish to make uncrewed flights.'
   }
   ,
   {
     id: 22,
     type: 'Crew',
-    name: '2 Crew',
-    price: 0,
-    weight: 0,
+    name: 'Small Crew Module',
+    price: 15000000,
+    weight: 4800,
     aero: '',
     turn: '',
-    capacity: 0,
+    capacity: 2,
     thrust: 0,
     efficiency: 0,
     fuel: 0,
-    description: '2 Crew'
+    description: 'The L2 "Loveseat" Module offers comfortable, spacious lodgings for two Andromedans as they enjoy a premium journey through the cosmos.'
   }
   ,
   {
     id: 23,
     type: 'Crew',
-    name: '3 Crew',
-    price: 0,
-    weight: 0,
+    name: 'Medium Crew Module',
+    price: 25000000,
+    weight: 7000,
     aero: '',
     turn: '',
-    capacity: 0,
+    capacity: 3,
     thrust: 0,
     efficiency: 0,
     fuel: 0,
-    description: '3 Crew'
+    description: 'The L3 "Musketeer" is a practical, reliable vehicle that can fit a trio of passengers. The L3 is our most popular model, and for good reason.'
   }
   ,
   {
     id: 24,
     type: 'Crew',
-    name: '5 Crew',
-    price: 0,
-    weight: 0,
+    name: 'Large Crew Module',
+    price: 40000000,
+    weight: 12000,
     aero: '',
     turn: '',
-    capacity: 0,
+    capacity: 5,
     thrust: 0,
     efficiency: 0,
     fuel: 0,
-    description: '5 Crew'
+    description: 'The L5 "Starfish" is an efficient way to transport a large family or work team, with room for up to five passengers.'
   }
   ,
   {
     id: 31,
     type: 'Cargo',
-    name: 'Specialized Cargo',
-    price: 0,
-    weight: 0,
+    name: 'Specialized Cargo Bay',
+    price: 50000000,
+    weight: 9000,
     aero: '',
     turn: '',
     capacity: 0,
     thrust: 0,
     efficiency: 0,
-    fuel: 0,
-    description: 'Specialized Cargo'
+    fuel: 5000,
+    description: 'The Specialized Cargo Bay is well adapated to carry loads with unique requirements. Satellites, rovers, and much more can be stored in this versatile, high-end facility.'
   }
   ,
   {
     id: 32,
     type: 'Cargo',
-    name: 'No Cargo',
-    price: 0,
-    weight: 0,
+    name: 'No Cargo Bay',
+    price: 5000000,
+    weight: 3000,
     aero: '',
     turn: '',
     capacity: 0,
     thrust: 0,
     efficiency: 0,
-    fuel: 0,
-    description: 'No Cargo'
+    fuel: 4000,
+    description: 'The No Cargo Bay is perfect for trips where nothing beyond the bare necessisities is required. The cargo bay is pared down to only the essentials to minimize weight and save you money.'
   }
   ,
   {
     id: 33,
     type: 'Cargo',
-    name: 'Small Cargo',
-    price: 0,
-    weight: 0,
+    name: 'Small Cargo Bay',
+    price: 20000000,
+    weight: 7500,
     aero: '',
     turn: '',
     capacity: 0,
     thrust: 0,
     efficiency: 0,
-    fuel: 0,
-    description: 'Small Cargo'
+    fuel: 4000,
+    description: 'The Small Cargo Bay can hold a respectable amount of goods, and comes at a very reasonable price. The discerning customer will surely realize the wisdom of having this cargo bay.'
   }
   ,
   {
     id: 34,
     type: 'Cargo',
-    name: 'Medium Cargo',
-    price: 0,
-    weight: 0,
+    name: 'Medium Cargo Bay',
+    price: 42000000,
+    weight: 110000,
     aero: '',
     turn: '',
     capacity: 0,
     thrust: 0,
     efficiency: 0,
-    fuel: 0,
-    description: 'Medium Cargo'
+    fuel: 6000,
+    description: 'The Andromedan with items to move will appreciate the Medium Cargo bay. This bay contains the most cargo space of our catalogue.'
   }
   ,
   {
     id: 41,
     type: 'Engine',
     name: 'Small Solid Fuel Engine',
-    price: 0,
-    weight: 0,
+    price: 50000000,
+    weight: 1000,
     aero: '',
     turn: '',
     capacity: 0,
-    thrust: 0,
-    efficiency: 0,
+    thrust: 1500,
+    efficiency: 50,
     fuel: 0,
-    description: 'Small Solid Fuel Engine'
+    description: 'The Small Solid Fuel Engine provides cheap and easy transportation. The customer with a budget will enjoy this engine.'
   } 
   ,
   {
     id: 42,
     type: 'Engine',
     name: 'Large Solid Fuel Engine',
-    price: 0,
-    weight: 0,
+    price: 200000000,
+    weight: 6000,
     aero: '',
     turn: '',
     capacity: 0,
-    thrust: 0,
-    efficiency: 0,
+    thrust: 7000,
+    efficiency: 40,
     fuel: 0,
-    description: 'Large Solid Fuel Engine'
+    description: 'The Large Solid Fuel Engine provides a great amount of power for an economical cost. Those who need to move heavy rockets will make good use of these rockets.'
   }
   ,
   {
     id: 43,
     type: 'Engine',
     name: 'Small Liquid Fuel Engine',
-    price: 0,
-    weight: 0,
+    price: 75000000,
+    weight: 3000,
     aero: '',
     turn: '',
     capacity: 0,
-    thrust: 0,
-    efficiency: 0,
+    thrust: 2000,
+    efficiency: 70,
     fuel: 0,
-    description: 'Small Liquid Fuel Engine'
+    description: 'Small Liquid Fuel Engines are an efficient and effective way to get around. These are the most popular engines we provide.'
   }
   ,
   {
     id: 44,
     type: 'Engine',
     name: 'Large Liquid Fuel Engine',
-    price: 0,
-    weight: 0,
+    price: 350000000,
+    weight: 9500,
     aero: '',
     turn: '',
     capacity: 0,
-    thrust: 0,
-    efficiency: 0,
+    thrust: 7500,
+    efficiency: 65,
     fuel: 0,
-    description: 'Large Liquid Fuel Engine'
+    description: 'The Large Liquid Fuel Engine provides an efficient and powerful way to trasnport large loads.'
   }
   ,
   {
     id: 51,
     type: 'Fin',
     name: 'Clipped Delta Fin',
-    price: 0,
-    weight: 0,
-    aero: '',
-    turn: '',
+    price: 100000,
+    weight: 200,
+    aero: 'High',
+    turn: 'Low',
     capacity: 0,
     thrust: 0,
     efficiency: 0,
     fuel: 0,
-    description: 'Clipped Delta Fin'
+    description: 'The Clipped Delta Fin provides excellent aerodynamics'
   }
   ,
   {
     id: 52,
     type: 'Fin',
     name: 'Trapezoidal Fin',
-    price: 0,
-    weight: 0,
-    aero: '',
-    turn: '',
+    price: 125000,
+    weight: 175,
+    aero: 'High',
+    turn: 'Low',
     capacity: 0,
     thrust: 0,
     efficiency: 0,
     fuel: 0,
-    description: 'Trapezodial Fin'
+    description: 'The Trapezodial Fin is the most effective fin for rockets carrying loads.'
   }
   ,
   {
     id: 53,
     type: 'Fin',
     name: 'Tapered Swept Fin',
-    price: 0,
-    weight: 0,
-    aero: '',
-    turn: '',
+    price: 50000,
+    weight: 200,
+    aero: 'Medium',
+    turn: 'Medium',
     capacity: 0,
     thrust: 0,
     efficiency: 0,
     fuel: 0,
-    description: 'Tapered Swept Fin'
+    description: 'The Tapered Swept Fin provides a good ride for a good price.'
   }
   ,
   {
     id: 54,
     type: 'Fin',
     name: 'Elliptical Fin',
-    price: 0,
-    weight: 0,
-    aero: '',
-    turn: '',
+    price: 1750000,
+    weight: 150,
+    aero: 'Very High',
+    turn: 'Low',
     capacity: 0,
     thrust: 0,
     efficiency: 0,
     fuel: 0,
-    description: 'Elliptical Fin'
+    description: 'The Elliptical Fin is an premium, elegant fin with excellent aerodynamics.'
   }
 
 ];
