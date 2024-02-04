@@ -1,35 +1,23 @@
 <h1>Parts</h1>
 
-<div *ngFor="let part of parts">
-
+<mat-grid-list cols="4" rowHeight="2:2">
+    <mat-grid-tile *ngFor="let part of parts">
+        
    <div *ngIf="(part.id % 10 === 1)">
-        <h2>{{part.type}}</h2>
-   </div>
-   <div style="float: left;">
-    <mat-card>
-        <mat-card-header>
-            <mat-card-title>{{ part.name }}</mat-card-title>
-            <mat-card-subtitle>{{ part.price | currency }}</mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-content>
-            <p>
-                <img [src]="'assets/' + part.id + '.png'" style="max-width: 200px;">
-            </p>
-        </mat-card-content>
-    </mat-card>
-    <button type="button" (click)="share()">
-        View Details
-    </button>
-
-    <div *ngIf="(part.id % 10 === 4)">
-        <mat-divider style="color:red;"></mat-divider>
-    </div>
-    </div>
-
+    <h2>{{part.type}}</h2>
 </div>
-
-<!-- 
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
--->
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>{{ part.name }}</mat-card-title>
+                <mat-card-subtitle>{{ part.price | currency }}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <p>
+                    <img [src]="'assets/' + part.id + '.png'" style="max-width: 200px;">
+                </p>
+            </mat-card-content>
+            <button mat-raised-button type="button" [routerLink]="['/parts', part.id]">
+                View Details
+            </button>
+        </mat-card>
+    </mat-grid-tile>

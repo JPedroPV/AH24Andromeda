@@ -2,7 +2,17 @@
 
 <div *ngIf="part">
   <h2>{{ part.name }}</h2>
+  <img [src]="'assets/' + part.id + '.png'" style="max-width: 300px;">
   <h4>{{ part.price | currency }}</h4>
+  <h4>{{ part.type }}</h4>
+  <h4>{{ part.weight }}</h4>
   <p>{{ part.description }}</p>
+  <p *ngIf="part.aero">{{ part.aero }}</p>
+  <p *ngIf="part.turn">{{ part.turn }}</p>
+  <p *ngIf="part.capacity">{{ part.capacity }}</p>
+  <p *ngIf="part.thrust">{{ part.thrust }}</p>
+  <p *ngIf="part.efficiency">{{ part.efficiency }}</p>
+  <p *ngIf="part.fuel">{{ part.fuel }}</p>
+
   <button type="button" (click)="addToCart(part)">Buy</button>
 </div>

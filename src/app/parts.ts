@@ -4,12 +4,12 @@ export interface Part {
   name: string;
   price: number;
   weight: number;
-  aero: string;
-  turn: string;
-  capacity: number;
-  thrust: number;
-  efficiency: number;
-  fuel: number;
+  aero?: string;
+  turn?: string;
+  capacity?: number;
+  thrust?: number;
+  efficiency?: number;
+  fuel?: number;
   description: string;
 }
 
@@ -21,11 +21,6 @@ export const parts = [
     price: 5000,
     weight: 300,
     aero: 'Very Low',
-    turn: '',
-    capacity: 0,
-    thrust: 0,
-    efficiency: 0,
-    fuel: 0,
     description: 'The Blunt Nose is the perfect, affordable nose for the working Andromedan. It has a rugged charm that is sure to please the budget-conscious spacefarer.'
   },
   {
@@ -35,11 +30,6 @@ export const parts = [
     price: 75000,
     weight: 350,
     aero: 'High',
-    turn: '',
-    capacity: 0,
-    thrust: 0,
-    efficiency: 0,
-    fuel: 0,
     description: 'The gentle curve of the Parabolic Nose is well suited to the exclusive customer. The sleek design is sure to impress.'
   }
   ,
@@ -50,11 +40,6 @@ export const parts = [
     price: 90000,
     weight: 450,
     aero: 'Very High',
-    turn: '',
-    capacity: 0,
-    thrust: 0,
-    efficiency: 0,
-    fuel: 0,
     description: 'The Ogive Nose is the most common rocket nose used on our vehicles. The Ogive is a perfect mix of price and quality'
   }
   ,
@@ -65,11 +50,6 @@ export const parts = [
     price: 100000,
     weight: 400,
     aero: 'Very High',
-    turn: '',
-    capacity: 0,
-    thrust: 0,
-    efficiency: 0,
-    fuel: 0,
     description: 'The angular beauty of the Conic design makes a sharp statement. Speed demons will love the aerodynamics offered by this striking nose cone'
   }
   ,
@@ -79,12 +59,7 @@ export const parts = [
     name: 'No Crew Module',
     price: 4000000,
     weight: 3000,
-    aero: '',
-    turn: '',
     capacity: 0,
-    thrust: 0,
-    efficiency: 0,
-    fuel: 0,
     description: 'The No Crew Module offers an affordable and effective package for those who wish to make uncrewed flights.'
   }
   ,
@@ -94,12 +69,7 @@ export const parts = [
     name: 'Small Crew Module',
     price: 15000000,
     weight: 4800,
-    aero: '',
-    turn: '',
     capacity: 2,
-    thrust: 0,
-    efficiency: 0,
-    fuel: 0,
     description: 'The L2 "Loveseat" Module offers comfortable, spacious lodgings for two Andromedans as they enjoy a premium journey through the cosmos.'
   }
   ,
@@ -109,12 +79,7 @@ export const parts = [
     name: 'Medium Crew Module',
     price: 25000000,
     weight: 7000,
-    aero: '',
-    turn: '',
     capacity: 3,
-    thrust: 0,
-    efficiency: 0,
-    fuel: 0,
     description: 'The L3 "Musketeer" is a practical, reliable vehicle that can fit a trio of passengers. The L3 is our most popular model, and for good reason.'
   }
   ,
@@ -124,12 +89,7 @@ export const parts = [
     name: 'Large Crew Module',
     price: 40000000,
     weight: 12000,
-    aero: '',
-    turn: '',
     capacity: 5,
-    thrust: 0,
-    efficiency: 0,
-    fuel: 0,
     description: 'The L5 "Starfish" is an efficient way to transport a large family or work team, with room for up to five passengers.'
   }
   ,
@@ -139,11 +99,6 @@ export const parts = [
     name: 'Specialized Cargo Bay',
     price: 50000000,
     weight: 9000,
-    aero: '',
-    turn: '',
-    capacity: 0,
-    thrust: 0,
-    efficiency: 0,
     fuel: 5000,
     description: 'The Specialized Cargo Bay is well adapated to carry loads with unique requirements. Satellites, rovers, and much more can be stored in this versatile, high-end facility.'
   }
@@ -154,11 +109,6 @@ export const parts = [
     name: 'No Cargo Bay',
     price: 5000000,
     weight: 3000,
-    aero: '',
-    turn: '',
-    capacity: 0,
-    thrust: 0,
-    efficiency: 0,
     fuel: 4000,
     description: 'The No Cargo Bay is perfect for trips where nothing beyond the bare necessisities is required. The cargo bay is pared down to only the essentials to minimize weight and save you money.'
   }
@@ -169,11 +119,6 @@ export const parts = [
     name: 'Small Cargo Bay',
     price: 20000000,
     weight: 7500,
-    aero: '',
-    turn: '',
-    capacity: 0,
-    thrust: 0,
-    efficiency: 0,
     fuel: 4000,
     description: 'The Small Cargo Bay can hold a respectable amount of goods, and comes at a very reasonable price. The discerning customer will surely realize the wisdom of having this cargo bay.'
   }
@@ -184,11 +129,6 @@ export const parts = [
     name: 'Medium Cargo Bay',
     price: 42000000,
     weight: 110000,
-    aero: '',
-    turn: '',
-    capacity: 0,
-    thrust: 0,
-    efficiency: 0,
     fuel: 6000,
     description: 'The Andromedan with items to move will appreciate the Medium Cargo bay. This bay contains the most cargo space of our catalogue.'
   }
@@ -199,12 +139,8 @@ export const parts = [
     name: 'Small Solid Fuel Engine',
     price: 50000000,
     weight: 1000,
-    aero: '',
-    turn: '',
-    capacity: 0,
     thrust: 1500,
     efficiency: 50,
-    fuel: 0,
     description: 'The Small Solid Fuel Engine provides cheap and easy transportation. The customer with a budget will enjoy this engine.'
   } 
   ,
@@ -214,12 +150,8 @@ export const parts = [
     name: 'Large Solid Fuel Engine',
     price: 200000000,
     weight: 6000,
-    aero: '',
-    turn: '',
-    capacity: 0,
     thrust: 7000,
     efficiency: 40,
-    fuel: 0,
     description: 'The Large Solid Fuel Engine provides a great amount of power for an economical cost. Those who need to move heavy rockets will make good use of these rockets.'
   }
   ,
@@ -229,12 +161,8 @@ export const parts = [
     name: 'Small Liquid Fuel Engine',
     price: 75000000,
     weight: 3000,
-    aero: '',
-    turn: '',
-    capacity: 0,
     thrust: 2000,
     efficiency: 70,
-    fuel: 0,
     description: 'Small Liquid Fuel Engines are an efficient and effective way to get around. These are the most popular engines we provide.'
   }
   ,
@@ -244,12 +172,8 @@ export const parts = [
     name: 'Large Liquid Fuel Engine',
     price: 350000000,
     weight: 9500,
-    aero: '',
-    turn: '',
-    capacity: 0,
     thrust: 7500,
     efficiency: 65,
-    fuel: 0,
     description: 'The Large Liquid Fuel Engine provides an efficient and powerful way to trasnport large loads.'
   }
   ,
@@ -261,10 +185,6 @@ export const parts = [
     weight: 200,
     aero: 'High',
     turn: 'Low',
-    capacity: 0,
-    thrust: 0,
-    efficiency: 0,
-    fuel: 0,
     description: 'The Clipped Delta Fin provides excellent aerodynamics'
   }
   ,
@@ -276,10 +196,6 @@ export const parts = [
     weight: 175,
     aero: 'High',
     turn: 'Low',
-    capacity: 0,
-    thrust: 0,
-    efficiency: 0,
-    fuel: 0,
     description: 'The Trapezodial Fin is the most effective fin for rockets carrying loads.'
   }
   ,
@@ -291,10 +207,6 @@ export const parts = [
     weight: 200,
     aero: 'Medium',
     turn: 'Medium',
-    capacity: 0,
-    thrust: 0,
-    efficiency: 0,
-    fuel: 0,
     description: 'The Tapered Swept Fin provides a good ride for a good price.'
   }
   ,
@@ -306,10 +218,6 @@ export const parts = [
     weight: 150,
     aero: 'Very High',
     turn: 'Low',
-    capacity: 0,
-    thrust: 0,
-    efficiency: 0,
-    fuel: 0,
     description: 'The Elliptical Fin is an premium, elegant fin with excellent aerodynamics.'
   }
 
