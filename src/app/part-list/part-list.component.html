@@ -3,8 +3,9 @@
 <div *ngFor="let part of parts">
 
    <div *ngIf="(part.id % 10 === 1)">
-        <h2></h2>
+        <h2>{{part.type}}</h2>
    </div>
+   <div style="float: left;">
     <mat-card>
         <mat-card-header>
             <mat-card-title>{{ part.name }}</mat-card-title>
@@ -12,7 +13,7 @@
         </mat-card-header>
         <mat-card-content>
             <p>
-                <img [src]="'assets/' + part.id + '.png'" style="max-width: 300px;">
+                <img [src]="'assets/' + part.id + '.png'" style="max-width: 200px;">
             </p>
         </mat-card-content>
     </mat-card>
@@ -22,6 +23,7 @@
 
     <div *ngIf="(part.id % 10 === 4)">
         <mat-divider style="color:red;"></mat-divider>
+    </div>
     </div>
 
 </div>

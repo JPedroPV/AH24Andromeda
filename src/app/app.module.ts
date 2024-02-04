@@ -14,6 +14,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { PartBuilderComponent } from './part-builder/part-builder.component';
 import{ MatCardModule } from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   imports: [
@@ -29,6 +30,7 @@ import {MatDividerModule} from '@angular/material/divider';
     MatIconModule,
     MatCardModule,
     MatDividerModule,
+    MatGridListModule,
   ],
   declarations: [
     AppComponent,
