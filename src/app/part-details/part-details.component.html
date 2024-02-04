@@ -1,18 +1,18 @@
-<h2>Part Details</h2>
-
 <div *ngIf="part">
-  <h2>{{ part.name }}</h2>
+  <h1>{{ part.name }}</h1>
   <img [src]="'assets/' + part.id + '.png'" style="max-width: 300px;">
-  <h4>{{ part.price | currency }}</h4>
-  <h4>{{ part.type }}</h4>
-  <h4>{{ part.weight }}</h4>
+  <mat-divider style="color: black;"></mat-divider>
   <p>{{ part.description }}</p>
-  <p *ngIf="part.aero">{{ part.aero }}</p>
-  <p *ngIf="part.turn">{{ part.turn }}</p>
-  <p *ngIf="part.capacity">{{ part.capacity }}</p>
-  <p *ngIf="part.thrust">{{ part.thrust }}</p>
-  <p *ngIf="part.efficiency">{{ part.efficiency }}</p>
-  <p *ngIf="part.fuel">{{ part.fuel }}</p>
+  <mat-divider style="color: black;"></mat-divider>
+  <p>Price: {{ part.price | currency }}</p>
+  <p>Type: {{ part.type }}</p>
+  <p>Weight: {{ part.weight }} kg</p>
+  <p *ngIf="part.aero">Aerodynamics: {{ part.aero }}</p>
+  <p *ngIf="part.turn">Turning Speed: {{ part.turn }}</p>
+  <p *ngIf="part.capacity">Crew Capacity: {{ part.capacity }}</p>
+  <p *ngIf="part.thrust">Thrust: {{ part.thrust }} kN</p>
+  <p *ngIf="part.efficiency">Fuel Efficiency: {{ part.efficiency }} %</p>
+  <p *ngIf="part.fuel">Fuel Capacity: {{ part.fuel }} kg</p>
 
   <button type="button" (click)="addToCart(part)">Buy</button>
 </div>

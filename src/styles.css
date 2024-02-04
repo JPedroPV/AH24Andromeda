@@ -11,7 +11,24 @@
 body {
   margin: 0;
   background-color: #faf0e6;
+  height: 80%;
+  background-image: linear-gradient(
+    135deg,
+    #faf0e6 0%,
+    #faf0e6 20%,
+    #ea8e21 20%,
+    #ea8e21 40%,
+    #d43718 40%,
+    #d43718 60%,
+    #0f152b 60%,
+    #0f152b 80%,
+    #faf0e6 80%,
+    #faf0e6 100%
+  );
+  background-size: cover;
+  background-attachment: fixed;
 }
+
 
 .container {
   display: flex;
@@ -136,6 +153,11 @@ app-top-bar h1 {
   margin-bottom: 8px;
   border-radius: 2px;
   background-color: #EEEEEE;
+}
+
+app-root {
+  position: relative;
+  z-index: 2;
 }
 
 
