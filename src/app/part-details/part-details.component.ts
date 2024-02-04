@@ -20,8 +20,9 @@ export class PartDetailsComponent implements OnInit{
   ngOnInit() {
     const routeParams = this.route.snapshot.paramMap;
     const partIdFromRoute = Number(routeParams.get('partId'));
-    if(this.part.id){
-    this.part = parts.find(part => part.id === partIdFromRoute);
+    if(this.part && this.part.id){
+      this.part = parts.find(part => part.id === partIdFromRoute);
+    }
   }
 
   addToCart(part: Part) {
