@@ -22,7 +22,8 @@ div {
     padding-bottom: 1%;
     padding-left: 35%;
     padding-right: 35%;
-    margin-right: 6%;
+
+    margin-right:6%;
 }
 
 button {
@@ -33,16 +34,30 @@ button {
 }
 
 p {
-    padding: 1%;
+    padding: 5%;
+    font-size: large;
     align-items: center;
     text-align: center;
     border-width: 1px;
     border-color: black;
-    background-color: antiquewhite;
+    background-color: rgba(250,240,230,0.8);;
+    margin:10px;
 }
 
 .finalPrice {
-    border-width: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    width: 200px;
+    border-width: 2px;
     border-color: black;
-    background-color: antiquewhite;
+    background-color: rgba(250,240,230,0.8);;
+    overflow: hidden;
+    padding: 0%;
+    margin-bottom: 10px;
+}
+
+.bottom {
+    padding:5%;
+
 }

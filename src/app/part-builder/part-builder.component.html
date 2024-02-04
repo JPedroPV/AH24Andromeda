@@ -28,3 +28,9 @@
 <div class="finalPrice">
     Total Price: {{ getTotalPrice() | currency }}
 </div>
+
+<div>
+    <button class="bottom" mat-raised-button color="white" [routerLink]="['/parts']">View Parts</button>
+    <button class="bottom" mat-raised-button color="grey" (click)="clearCart()">Reset Build</button>
+    <button class="bottom" mat-raised-button color="grey" (click)="confirmPurchase()">Confirm Purchase</button>
+</div>

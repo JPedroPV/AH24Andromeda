@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { CartService } from '../cart.service';
 import { parts } from '../parts';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatDialog } from '@angular/material/dialog';
+import { ConfirmPurchaseComponent } from './confirm-purchase/confirm-purchase.component';
 
 @Component({
   selector: 'app-part-builder',
@@ -12,7 +15,9 @@ export class PartBuilderComponent {
   parts = [...parts];
 
   constructor(
-    private cartService: CartService
+    private cartService: CartService,
+    private _snackBar: MatSnackBar,
+    public dialog: MatDialog,
   ) { }
 
   getImage(type:string, otherfin?:boolean){
@@ -60,5 +65,29 @@ export class PartBuilderComponent {
 
   getTotalPrice(){
     return this.cartService.getTotalPrice();
+  }
+
+  confirmPurchase(){
+    if(this.cartService.getTotalPrice() > 0)
+      this.dialog.open(ConfirmPurchaseComponent, {
+        disableClose: true,
+        }).afterClosed().subscribe(result => {
+          if(result) {
+            this._snackBar.open('Purchase Confirmed!', "Ok", {
+              duration: 1500
+            });
+          }
+        });
+    else
+      this._snackBar.open('Cart is empty', "Ok", {
+        duration: 1500
+      });
+  }
+
+  clearCart(){
+    this.cartService.clearCart();
+    this._snackBar.open('Cart Cleared', "Ok", {
+      duration: 1500
+    });
   }
 }

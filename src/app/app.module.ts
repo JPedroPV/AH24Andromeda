@@ -19,6 +19,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { ConfirmSwitchComponent } from './part-details/confirm-switch/confirm-switch.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AuthorComponent } from './about-us/author/author.component';
+import { ConfirmPurchaseComponent } from './part-builder/confirm-purchase/confirm-purchase.component';
 
 @NgModule({
   imports: [
@@ -45,6 +46,7 @@ import { AuthorComponent } from './about-us/author/author.component';
     PartDetailsComponent,
     ConfirmSwitchComponent,
     PartBuilderComponent,
+    ConfirmPurchaseComponent,
     AboutUsComponent,
     AuthorComponent,
   ],
@@ -57,9 +59,3 @@ import { AuthorComponent } from './about-us/author/author.component';
 })
 export class AppModule { }
 
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/

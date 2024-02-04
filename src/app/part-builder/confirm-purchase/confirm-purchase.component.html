@@ -1,0 +1,22 @@
+<div>
+    <h2>Do you want to purchase this build?</h2>
+    <mat-grid-list cols="2" rowHeight="2:2">
+        <div *ngFor="let part of parts">
+            <mat-grid-tile>
+                <div class = "parts">
+                    <img [src]="'assets/' + part.id + '.png'" style="max-width: 200px;">
+                    <h3>{{part.name}}</h3>
+                </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <div class = "parts">
+                    <p>{{part.price | currency}}</p>
+                </div>
+            </mat-grid-tile>
+        </div>
+    </mat-grid-list>
+
+
+        <button mat-raised-button (click)="onConfirm()">Confirm</button>
+        <button mat-raised-button (click)="onCancel()">Cancel</button>
+</div>
