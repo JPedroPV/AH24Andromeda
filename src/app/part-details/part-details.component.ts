@@ -45,18 +45,23 @@ export class PartDetailsComponent implements OnInit{
         }).afterClosed().subscribe(swap => {
           if(swap){
             this.cartService.addToCart(part);
-            this._snackBar.open('Swapped!', "Ok");
+            this._snackBar.open('Swapped!', "Ok", {
+              duration: 1500
+            });
           }
         });
       }
       else {
-        
-        this._snackBar.open(part.name + ' is already in the cart!', "Ok");
+        this._snackBar.open(part.name + ' is already in the cart!', "Ok", {
+          duration: 1500
+        });
       }
     }
     else {
       this.cartService.addToCart(part);
-      this._snackBar.open(part.name + ' added to cart!', "Ok");
+      this._snackBar.open(part.name + ' added to cart!', "Ok", {
+        duration: 1500
+      });
     }
   }
 
