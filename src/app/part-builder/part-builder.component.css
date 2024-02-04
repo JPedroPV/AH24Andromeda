@@ -1,0 +1,21 @@
+img {
+    width: 100%;
+    align-items: center;
+}
+
+div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0%;
+    padding-bottom: 2%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+button {
+    padding: 0%;
+    align-items: center;
+    width: 25%;
+    background-color: #add8E6;
+}

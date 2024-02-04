@@ -15,6 +15,7 @@ import { PartBuilderComponent } from './part-builder/part-builder.component';
 import{ MatCardModule } from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   imports: [
@@ -42,6 +43,9 @@ import {MatGridListModule} from '@angular/material/grid-list';
   ],
   bootstrap: [
     AppComponent
+  ],
+  providers: [
+    provideAnimationsAsync()
   ]
 })
 export class AppModule { }
