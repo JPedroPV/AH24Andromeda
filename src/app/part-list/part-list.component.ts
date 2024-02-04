@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 
 import { parts } from '../parts';
-import { share } from 'rxjs';
 
 @Component({
   selector: 'app-part-list',
@@ -9,7 +8,7 @@ import { share } from 'rxjs';
   styleUrls: ['./part-list.component.css']
 })
 export class PartListComponent {
-  part = [...parts];
+  parts = [...parts];
 
   share() {
     window.alert('The part has been shared!');
