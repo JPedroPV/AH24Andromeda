@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-part-builder',
@@ -7,5 +6,7 @@ import {MatButtonModule} from '@angular/material/button';
   styleUrl: './part-builder.component.css'
 })
 export class PartBuilderComponent {
-
+  getImage(type:string){
+    return `assets/rocket_nose_none.png`;
+  }
 }

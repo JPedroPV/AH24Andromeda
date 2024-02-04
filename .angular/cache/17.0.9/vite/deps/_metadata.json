@@ -1,47 +1,62 @@
 {
-  "hash": "a81c086e",
-  "browserHash": "b208d229",
+  "hash": "0e43b7f0",
+  "browserHash": "5c61627a",
   "optimized": {
     "@angular/common": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "d23b11ca",
+      "fileHash": "44be4e14",
       "needsInterop": false
     },
     "@angular/core": {
       "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "2f48dea7",
+      "fileHash": "b9edc5c7",
       "needsInterop": false
     },
     "@angular/forms": {
       "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
       "file": "@angular_forms.js",
-      "fileHash": "6e3fea7c",
+      "fileHash": "d4357b3d",
+      "needsInterop": false
+    },
+    "@angular/material/button": {
+      "src": "../../../../../node_modules/@angular/material/fesm2022/button.mjs",
+      "file": "@angular_material_button.js",
+      "fileHash": "7b645046",
+      "needsInterop": false
+    },
+    "@angular/material/icon": {
+      "src": "../../../../../node_modules/@angular/material/fesm2022/icon.mjs",
+      "file": "@angular_material_icon.js",
+      "fileHash": "000117f2",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "8b4e5f52",
+      "fileHash": "d4b0c1b8",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "e79bcc1e",
+      "fileHash": "4954311e",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-6YAA32QX": {
-      "file": "chunk-6YAA32QX.js"
+    "chunk-NHINTF7H": {
+      "file": "chunk-NHINTF7H.js"
     },
-    "chunk-KGEAT5EH": {
-      "file": "chunk-KGEAT5EH.js"
+    "chunk-IGX2TLCZ": {
+      "file": "chunk-IGX2TLCZ.js"
     },
-    "chunk-THWPMT2E": {
-      "file": "chunk-THWPMT2E.js"
+    "chunk-UBVXDGTI": {
+      "file": "chunk-UBVXDGTI.js"
+    },
+    "chunk-EIPX36HT": {
+      "file": "chunk-EIPX36HT.js"
     }
   }
 }
