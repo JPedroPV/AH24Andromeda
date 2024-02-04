@@ -26,4 +26,8 @@ export class CartService {
   hasItemType(partType: string){
     return this.items.find(part => part.type === partType);
   }
+
+  getTotalPrice(){
+    return this.items.reduce((acc, item) => acc + item.price, 0);
+  }
 }

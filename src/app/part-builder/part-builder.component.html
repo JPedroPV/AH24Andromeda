@@ -1,20 +1,29 @@
 <div>
     <button aria-label="Cone Image" [routerLink]="onClick('Nose')"><img mat-card-image [src]="getImage('Nose')" alt="Photo of your soon to be Cone"></button>
+    <p> {{ getPrice('Nose') | currency }}</p>
 </div>
 
 <div>
 <button aria-label="Crew Image" [routerLink]="onClick('Crew')"><img mat-card-image [src]="getImage('Crew')" alt="Photo of your soon to be Crew"></button>
+<p> {{ getPrice('Crew') | currency }}</p>
 </div>
 
 <div>
 <button aria-label="Cargo Image" [routerLink]="onClick('Cargo')"><img mat-card-image [src]="getImage('Cargo')" alt="Photo of your soon to be Cargo"></button>
+<p> {{ getPrice('Cargo') | currency }}</p>
 </div>
 
 <div class="fins">
-<button aria-label="Fins Image" [routerLink]="onClick('Fins')"><img mat-card-image [src]="getImage('Fins')" alt="Photo of your soon to be Fins"></button>
-<button aria-label="Fins Image" [routerLink]="onClick('Fins')"><img mat-card-image [src]="getImage('Fins', true)" alt="Photo of your soon to be Fins"></button>
+<button aria-label="Fins Image" [routerLink]="onClick('Fin')"><img mat-card-image [src]="getImage('Fin')" alt="Photo of your soon to be Fins"></button>
+<button aria-label="Fins Image" [routerLink]="onClick('Fin')"><img mat-card-image [src]="getImage('Fin', true)" alt="Photo of your soon to be Fins"></button>
+<p style="margin-left: 20px;"> {{ getPrice('Fin') | currency }}</p>
 </div>
 
 <div>
 <button aria-label="Engine Image" [routerLink]="onClick('Engine')"><img mat-card-image [src]="getImage('Engine')" alt="Photo of your soon to be Engine"></button>
+<p> {{ getPrice('Engine') | currency }}</p>
+</div>
+
+<div class="finalPrice">
+    Total Price: {{ getTotalPrice() | currency }}
 </div>

@@ -50,4 +50,15 @@ export class PartBuilderComponent {
       }
     return undefined
   }
+
+  getPrice(partsType: string){
+    const foundItem = this.cartService.getItems().find(part => part.type === partsType);
+    if(foundItem)
+      return foundItem.price;
+    return 0;
+  }
+
+  getTotalPrice(){
+    return this.cartService.getTotalPrice();
+  }
 }

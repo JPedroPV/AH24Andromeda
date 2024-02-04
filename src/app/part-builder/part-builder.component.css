@@ -22,10 +22,28 @@ div {
     padding-bottom: 1%;
     padding-left: 35%;
     padding-right: 35%;
+    margin-right: 6%;
 }
 
 button {
+    width: 50%;
     padding: 0%;
     align-items: center;
     background-color: #add8E6;
+}
+
+p {
+    padding: 1%;
+    align-items: center;
+    text-align: center;
+    border-width: 1px;
+    border-color: black;
+    background-color: antiquewhite;
+}
+
+.finalPrice {
+    
+    border-width: 1px;
+    border-color: black;
+    background-color: antiquewhite;
 }
