@@ -13,6 +13,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { PartBuilderComponent } from './part-builder/part-builder.component';
 import{ MatCardModule } from '@angular/material/card';
+import {MatDividerModule} from '@angular/material/divider';
 
 @NgModule({
   imports: [
@@ -27,6 +28,7 @@ import{ MatCardModule } from '@angular/material/card';
     MatButtonModule,
     MatIconModule,
     MatCardModule,
+    MatDividerModule,
   ],
   declarations: [
     AppComponent,

@@ -1,26 +1,24 @@
-<h2>Parts</h2>
+<h1>Parts</h1>
 
 <div *ngFor="let part of parts">
 
+   <div *ngIf="(part.id % 10 === 1)">
+        <h2></h2>
+   </div>
     <mat-card>
         <mat-card-header>
             <mat-card-title>{{ part.name }}</mat-card-title>
-            <mat-card-subtitle>{{ part.id }}</mat-card-subtitle>
+            <mat-card-subtitle>{{ part.price | currency }}</mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
             <p>
-                {{ part.description }}
+                <img [src]="'assets/' + part.id + '.png'" style="max-width: 300px;">
             </p>
         </mat-card-content>
     </mat-card>
     <button type="button" (click)="share()">
-        Add To Cart
+        View Details
     </button>
-
-    <app-part-alerts 
-    [part]="part"
-    (notify)="onNotify()">
-    </app-part-alerts>
 
     <div *ngIf="(part.id % 10 === 4)">
         <mat-divider style="color:red;"></mat-divider>
