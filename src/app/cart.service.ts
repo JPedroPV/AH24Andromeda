@@ -8,7 +8,11 @@ export class CartService {
   items: Part[] = [];
 
   addToCart(part: Part) {
+    if(this.hasItemType(part.type)){
+      return false;
+    }
     this.items.push(part);
+    return true;
   }
 
   getItems() {
@@ -18,5 +22,9 @@ export class CartService {
   clearCart() {
     this.items = [];
     return this.items;
+  }
+
+  hasItemType(partType: string){
+    return this.items.find(part => part.type === partType);
   }
 }

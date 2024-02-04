@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-part-builder',
@@ -6,7 +7,34 @@ import { Component } from '@angular/core';
   styleUrl: './part-builder.component.css'
 })
 export class PartBuilderComponent {
-  getImage(type:string){
-    return `assets/rocket_nose_none.png`;
+  constructor(
+    private cartService: CartService
+  ) { }
+
+  getImage(type:string, otherfin?:boolean){
+    var returnString: string = 'assets/';
+    if(this.cartService.hasItemType(type))
+        returnString += this.cartService.getItems().find(part => part.type === type)?.id;
+    else {
+      switch(type){
+        case 'Cone':
+          returnString += 10;
+          break;
+        case 'Crew':
+          returnString += 20;
+          break;
+        case 'Cargo':
+          returnString += 30;
+          break;
+        case 'Engine':
+          returnString += 40;
+          break;
+        case 'Fin':
+          returnString += 50;
+      }
+    }
+    if(otherfin)
+      returnString += 'r';
+    return returnString + '.png';
   }
 }
