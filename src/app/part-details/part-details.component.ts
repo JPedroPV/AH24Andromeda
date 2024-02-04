@@ -59,4 +59,8 @@ export class PartDetailsComponent implements OnInit{
       this._snackBar.open(part.name + ' added to cart!', "Ok");
     }
   }
+
+  goBack() {
+    window.history.back();
+  }
 }
