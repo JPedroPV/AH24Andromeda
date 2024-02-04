@@ -12,10 +12,12 @@ import { CartComponent } from './cart/cart.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { PartBuilderComponent } from './part-builder/part-builder.component';
-import{ MatCardModule } from '@angular/material/card';
-import {MatDividerModule} from '@angular/material/divider';
-import {MatGridListModule} from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatDialogClose } from '@angular/material/dialog';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { ConfirmSwitchComponent } from './part-details/confirm-switch/confirm-switch.component';
 
 @NgModule({
   imports: [
@@ -27,6 +29,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
       { path: 'builder', component: PartBuilderComponent},
       { path: 'cart', component: CartComponent},
     ]),
+    MatDialogClose,
     MatButtonModule,
     MatIconModule,
     MatCardModule,
@@ -39,6 +42,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     PartListComponent,
     PartAlertsComponent,
     PartDetailsComponent,
+    ConfirmSwitchComponent,
     CartComponent,
   ],
   bootstrap: [

@@ -1,0 +1,31 @@
+div {
+    width: 600px;
+    height: 400px;
+    text-align: center;
+}
+
+.parts {
+    width: 200px;
+    height: auto;
+}
+
+.parts img {
+    display: block;
+    margin: 0 auto;
+}
+
+h3 {
+    margin: 0;
+}
+
+h2 {
+    margin: 20px 0 0 0;
+}
+
+button {
+    margin: 0 20px 0;
+}
+
+buttons {
+    margin: 0;
+}

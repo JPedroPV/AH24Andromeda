@@ -9,10 +9,9 @@ export class CartService {
 
   addToCart(part: Part) {
     if(this.hasItemType(part.type)){
-      return false;
+      this.items = this.items.filter(item => item.type !== part.type);
     }
     this.items.push(part);
-    return true;
   }
 
   getItems() {
