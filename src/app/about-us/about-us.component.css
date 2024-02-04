@@ -1,6 +1,28 @@
-.project {
+.projectdiv{
     height: 100%;
-    margin: 30px 15%;
+    margin: 30px 17%;
     padding: 30px;
+    width: auto;
+    background-color: rgba(250,240,230,0.8);
+}
+
+.projectimg {
+    overflow: hidden;
+}
+
+.logo {
+    width: 400px;
+}
+
+.projecttext {
+    float:left;
+    width: 500px;
+}
+
+.authorsdiv{
+    height: auto;
+    margin: 30px 17%;
+    padding: 30px;
+    width: auto;
     background-color: rgba(250,240,230,0.8);
 }

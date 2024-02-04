@@ -8,7 +8,6 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { PartListComponent } from './part-list/part-list.component';
 import { PartAlertsComponent } from './part-list/part-alerts/part-alerts.component';
 import { PartDetailsComponent } from './part-details/part-details.component';
-import { CartComponent } from './cart/cart.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { PartBuilderComponent } from './part-builder/part-builder.component';
@@ -19,6 +18,7 @@ import { MatDialogClose } from '@angular/material/dialog';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { ConfirmSwitchComponent } from './part-details/confirm-switch/confirm-switch.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { AuthorComponent } from './about-us/author/author.component';
 
 @NgModule({
   imports: [
@@ -29,7 +29,6 @@ import { AboutUsComponent } from './about-us/about-us.component';
       { path: 'parts', component: PartListComponent },
       { path: 'parts/:partId', component: PartDetailsComponent },
       { path: 'builder', component: PartBuilderComponent},
-      { path: 'cart', component: CartComponent},
     ]),
     MatDialogClose,
     MatButtonModule,
@@ -46,8 +45,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
     PartDetailsComponent,
     ConfirmSwitchComponent,
     PartBuilderComponent,
-    CartComponent,
     AboutUsComponent,
+    AuthorComponent,
   ],
   bootstrap: [
     AppComponent

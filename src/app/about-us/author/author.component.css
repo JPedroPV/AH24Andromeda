@@ -1,0 +1,20 @@
+.wrapper {
+    width: 400px;
+    overflow: hidden;
+}
+
+.first {
+    float: left;
+    width: 200px;
+    padding: 0;
+    margin: 0 15px 0 0;
+}
+
+.image {
+    width: 200px;
+}
+
+.second {
+    padding-top: 15px;
+    overflow: hidden;
+}
