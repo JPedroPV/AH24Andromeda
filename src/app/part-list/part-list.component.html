@@ -1,10 +1,10 @@
-<h1>Parts</h1>
+<h1 style="padding: 10px; border-color: red; border-width: 2px;">Parts</h1>
 
 <mat-grid-list cols="4" rowHeight="2:2">
     <mat-grid-tile *ngFor="let part of parts">
         
    <div *ngIf="(part.id % 10 === 1)">
-    <h2>{{part.type}}</h2>
+    <h2 style="padding: 10px;">{{part.type}}</h2>
 </div>
         <mat-card>
             <mat-card-header>

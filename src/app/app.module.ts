@@ -12,10 +12,16 @@ import { CartComponent } from './cart/cart.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { PartBuilderComponent } from './part-builder/part-builder.component';
+<<<<<<< Updated upstream
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDialogClose } from '@angular/material/dialog';
+=======
+import{ MatCardModule } from '@angular/material/card';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatGridListModule} from '@angular/material/grid-list';
+>>>>>>> Stashed changes
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { ConfirmSwitchComponent } from './part-details/confirm-switch/confirm-switch.component';
 
@@ -43,6 +49,7 @@ import { ConfirmSwitchComponent } from './part-details/confirm-switch/confirm-sw
     PartAlertsComponent,
     PartDetailsComponent,
     ConfirmSwitchComponent,
+    PartBuilderComponent,
     CartComponent,
   ],
   bootstrap: [

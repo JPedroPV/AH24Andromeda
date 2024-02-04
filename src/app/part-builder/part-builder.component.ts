@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CartService } from '../cart.service';
+import { parts } from '../parts';
 
 @Component({
   selector: 'app-part-builder',
@@ -7,6 +8,9 @@ import { CartService } from '../cart.service';
   styleUrl: './part-builder.component.css'
 })
 export class PartBuilderComponent {
+
+  parts = [...parts];
+
   constructor(
     private cartService: CartService
   ) { }
@@ -37,5 +41,13 @@ export class PartBuilderComponent {
     if(otherfin)
       returnString += 'r';
     return returnString + '.png';
+  }
+
+  onClick(partsType: string){
+    const foundItem = this.cartService.getItems().find(part => part.type === partsType);
+      if (foundItem) {
+        return ['/parts', foundItem.id];
+      }
+    return undefined
   }
 }

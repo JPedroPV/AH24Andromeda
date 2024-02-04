@@ -1,9 +1,20 @@
 <div>
-    <button mat-icon-button aria-label="Cone Image"><img mat-card-image [src]="getImage('Nose')" alt="Photo of your soon to be Cone"></button>
+    <button aria-label="Cone Image" [routerLink]="onClick('Nose')"><img mat-card-image [src]="getImage('Nose')" alt="Photo of your soon to be Cone"></button>
 </div>
 
-<button mat-icon-button aria-label="Crew Image"><img mat-card-image [src]="getImage('Crew')" alt="Photo of your soon to be Crew"></button>
-<button mat-icon-button aria-label="Cargo Image"><img mat-card-image [src]="getImage('Cargo')" alt="Photo of your soon to be Cargo"></button>
-<button mat-icon-button aria-label="Fins Image"><img mat-card-image [src]="getImage('Fins')" alt="Photo of your soon to be Fins"></button>
-<button mat-icon-button aria-label="Fins Image"><img mat-card-image [src]="getImage('Fins', true)" alt="Photo of your soon to be Fins"></button>
-<button mat-icon-button aria-label="Engine Image"><img mat-card-image [src]="getImage('Engine')" alt="Photo of your soon to be Engine"></button>
+<div>
+<button aria-label="Crew Image" [routerLink]="onClick('Crew')"><img mat-card-image [src]="getImage('Crew')" alt="Photo of your soon to be Crew"></button>
+</div>
+
+<div>
+<button aria-label="Cargo Image" [routerLink]="onClick('Cargo')"><img mat-card-image [src]="getImage('Cargo')" alt="Photo of your soon to be Cargo"></button>
+</div>
+
+<div class="fins">
+<button aria-label="Fins Image" [routerLink]="onClick('Fins')"><img mat-card-image [src]="getImage('Fins')" alt="Photo of your soon to be Fins"></button>
+<button aria-label="Fins Image" [routerLink]="onClick('Fins')"><img mat-card-image [src]="getImage('Fins', true)" alt="Photo of your soon to be Fins"></button>
+</div>
+
+<div>
+<button aria-label="Engine Image" [routerLink]="onClick('Engine')"><img mat-card-image [src]="getImage('Engine')" alt="Photo of your soon to be Engine"></button>
+</div>
