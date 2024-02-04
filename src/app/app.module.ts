@@ -12,6 +12,7 @@ import { CartComponent } from './cart/cart.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { PartBuilderComponent } from './part-builder/part-builder.component';
+import{ MatCardModule } from '@angular/material/card';
 
 @NgModule({
   imports: [
@@ -24,7 +25,8 @@ import { PartBuilderComponent } from './part-builder/part-builder.component';
       { path: 'cart', component: CartComponent},
     ]),
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule,
   ],
   declarations: [
     AppComponent,

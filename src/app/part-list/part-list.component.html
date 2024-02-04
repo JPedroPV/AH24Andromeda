@@ -1,25 +1,30 @@
 <h2>Parts</h2>
 
 <div *ngFor="let part of parts">
-    <h3>
-        <a [title]="part.name + ' details'"
-        [routerLink]="['/parts', part.id]" >
-            {{ part.name }} 
-        </a>
-    </h3>
 
-    <p *ngIf="part.description">
-        Description: {{ part.description }}
-    </p>
-
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>{{ part.name }}</mat-card-title>
+            <mat-card-subtitle>{{ part.id }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                {{ part.description }}
+            </p>
+        </mat-card-content>
+    </mat-card>
     <button type="button" (click)="share()">
-        Share
+        Add To Cart
     </button>
 
     <app-part-alerts 
     [part]="part"
     (notify)="onNotify()">
     </app-part-alerts>
+
+    <div *ngIf="(part.id % 10 === 4)">
+        <mat-divider style="color:red;"></mat-divider>
+    </div>
 
 </div>
 
