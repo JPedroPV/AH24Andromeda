@@ -1,0 +1,30 @@
+<h2>Parts</h2>
+
+<div *ngFor="let part of parts">
+    <h3>
+        <a [title]="part.name + ' details'"
+        [routerLink]="['/parts', part.id]" >
+            {{ part.name }} 
+        </a>
+    </h3>
+
+    <p *ngIf="part.description">
+        Description: {{ part.description }}
+    </p>
+
+    <button type="button" (click)="share()">
+        Share
+    </button>
+
+    <app-part-alerts 
+    [part]="part"
+    (notify)="onNotify()">
+    </app-part-alerts>
+
+</div>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->

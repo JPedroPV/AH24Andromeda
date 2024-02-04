@@ -5,9 +5,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { ProductListComponent } from './product-list/product-list.component';
-import { ProductAlertsComponent } from './product-list/product-alerts/product-alerts.component';
-import { ProductDetailsComponent } from './product-details/product-details.component';
+import { PartListComponent } from './part-list/part-list.component';
+import { PartAlertsComponent } from './part-list/part-alerts/part-alerts.component';
+import { PartDetailsComponent } from './part-details/part-details.component';
 import { CartComponent } from './cart/cart.component';
 
 @NgModule({
@@ -15,8 +15,8 @@ import { CartComponent } from './cart/cart.component';
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
-      { path: 'products/:productId', component: ProductDetailsComponent },
+      { path: '', component: PartListComponent },
+      { path: 'parts/:partId', component: PartDetailsComponent },
       { path: 'cart', component: CartComponent},
     ])
   
@@ -24,9 +24,9 @@ import { CartComponent } from './cart/cart.component';
   declarations: [
     AppComponent,
     TopBarComponent,
-    ProductListComponent,
-    ProductAlertsComponent,
-    ProductDetailsComponent,
+    PartListComponent,
+    PartAlertsComponent,
+    PartDetailsComponent,
     CartComponent,
   ],
   bootstrap: [

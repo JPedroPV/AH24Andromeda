@@ -1,11 +1,19 @@
-export interface Product {
+export interface Part {
   id: number;
+  type: string;
   name: string;
   price: number;
+  weight: number;
+  aero: string;
+  turn: string;
+  capcity: number;
+  thrust: number;
+  efficiency: number;
+  fuel: number;
   description: string;
 }
 
-export const products = [
+export const parts = [
   {
     id: 0,
     name: 'Phone XL',
@@ -73,7 +81,7 @@ export const products = [
   ,
   {
     id: 21,
-    type: 'Crew'
+    type: 'Crew',
     name: 'No Crew',
     price: 0,
     weight: 0,
@@ -88,7 +96,7 @@ export const products = [
   ,
   {
     id: 22,
-    type: 'Crew'
+    type: 'Crew',
     name: '2 Crew',
     price: 0,
     weight: 0,
@@ -103,7 +111,7 @@ export const products = [
   ,
   {
     id: 23,
-    type: 'Crew'
+    type: 'Crew',
     name: '3 Crew',
     price: 0,
     weight: 0,
@@ -118,7 +126,7 @@ export const products = [
   ,
   {
     id: 24,
-    type: 'Crew'
+    type: 'Crew',
     name: '5 Crew',
     price: 0,
     weight: 0,
@@ -133,7 +141,7 @@ export const products = [
   ,
   {
     id: 31,
-    type: 'Cargo'
+    type: 'Cargo',
     name: 'Specialized Cargo',
     price: 0,
     weight: 0,
@@ -148,7 +156,7 @@ export const products = [
   ,
   {
     id: 32,
-    type: 'Cargo'
+    type: 'Cargo',
     name: 'No Cargo',
     price: 0,
     weight: 0,
@@ -163,7 +171,7 @@ export const products = [
   ,
   {
     id: 33,
-    type: 'Cargo'
+    type: 'Cargo',
     name: 'Small Cargo',
     price: 0,
     weight: 0,
@@ -178,7 +186,7 @@ export const products = [
   ,
   {
     id: 34,
-    type: 'Cargo'
+    type: 'Cargo',
     name: 'Medium Cargo',
     price: 0,
     weight: 0,
@@ -193,7 +201,7 @@ export const products = [
   ,
   {
     id: 41,
-    type: 'Engine'
+    type: 'Engine',
     name: 'Small Solid Fuel Engine',
     price: 0,
     weight: 0,
@@ -208,7 +216,7 @@ export const products = [
   ,
   {
     id: 42,
-    type: 'Engine'
+    type: 'Engine',
     name: 'Large Solid Fuel Engine',
     price: 0,
     weight: 0,
@@ -223,7 +231,7 @@ export const products = [
   ,
   {
     id: 43,
-    type: 'Engine'
+    type: 'Engine',
     name: 'Small Liquid Fuel Engine',
     price: 0,
     weight: 0,
@@ -238,7 +246,7 @@ export const products = [
   ,
   {
     id: 44,
-    type: 'Engine'
+    type: 'Engine',
     name: 'Large Liquid Fuel Engine',
     price: 0,
     weight: 0,
@@ -253,7 +261,7 @@ export const products = [
   ,
   {
     id: 51,
-    type: 'Fin'
+    type: 'Fin',
     name: 'Clipped Delta Fin',
     price: 0,
     weight: 0,
@@ -268,7 +276,7 @@ export const products = [
   ,
   {
     id: 52,
-    type: 'Fin'
+    type: 'Fin',
     name: 'Trapezoidal Fin',
     price: 0,
     weight: 0,
@@ -283,7 +291,7 @@ export const products = [
   ,
   {
     id: 53,
-    type: 'Fin'
+    type: 'Fin',
     name: 'Tapered Swept Fin',
     price: 0,
     weight: 0,
@@ -298,7 +306,7 @@ export const products = [
   ,
   {
     id: 54,
-    type: 'Fin'
+    type: 'Fin',
     name: 'Elliptical Fin',
     price: 0,
     weight: 0,
@@ -312,10 +320,3 @@ export const products = [
   }
 
 ];
-
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/
