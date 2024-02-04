@@ -18,13 +18,15 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDialogClose } from '@angular/material/dialog';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { ConfirmSwitchComponent } from './part-details/confirm-switch/confirm-switch.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: PartListComponent },
+      { path: '', component: AboutUsComponent },
+      { path: 'parts', component: PartListComponent },
       { path: 'parts/:partId', component: PartDetailsComponent },
       { path: 'builder', component: PartBuilderComponent},
       { path: 'cart', component: CartComponent},
@@ -45,6 +47,7 @@ import { ConfirmSwitchComponent } from './part-details/confirm-switch/confirm-sw
     ConfirmSwitchComponent,
     PartBuilderComponent,
     CartComponent,
+    AboutUsComponent,
   ],
   bootstrap: [
     AppComponent
