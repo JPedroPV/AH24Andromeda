@@ -17,7 +17,7 @@ export class PartBuilderComponent {
         returnString += this.cartService.getItems().find(part => part.type === type)?.id;
     else {
       switch(type){
-        case 'Cone':
+        case 'Nose':
           returnString += 10;
           break;
         case 'Crew':
@@ -29,8 +29,9 @@ export class PartBuilderComponent {
         case 'Engine':
           returnString += 40;
           break;
-        case 'Fin':
+        default:
           returnString += 50;
+          break;
       }
     }
     if(otherfin)
