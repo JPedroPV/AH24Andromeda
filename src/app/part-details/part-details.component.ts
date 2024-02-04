@@ -6,6 +6,7 @@ import {
   MatDialog,
 } from '@angular/material/dialog';
 import { ConfirmSwitchComponent } from './confirm-switch/confirm-switch.component';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 export interface DialogData {
   newPart: Part;
@@ -25,6 +26,7 @@ export class PartDetailsComponent implements OnInit{
     private route: ActivatedRoute,
     private cartService: CartService,
     public dialog: MatDialog,
+    private _snackBar: MatSnackBar,
   ) { }
 
   ngOnInit() {
@@ -43,16 +45,18 @@ export class PartDetailsComponent implements OnInit{
         }).afterClosed().subscribe(swap => {
           if(swap){
             this.cartService.addToCart(part);
-            console.log('Swapped!');
+            this._snackBar.open('Swapped!', "Ok");
           }
         });
       }
       else {
-        window.alert('This part is already in the cart!');
+        
+        this._snackBar.open(part.name + ' is already in the cart!', "Ok");
       }
     }
     else {
       this.cartService.addToCart(part);
+      this._snackBar.open(part.name + ' added to cart!', "Ok");
     }
   }
 }
